@@ -468,6 +468,8 @@ count++;}
 displayDF();
   if(myDataA.b==true)
   {tft.fillScreen(TFT_BLACK); 
+  game_select=0;
+    df_select=0;
      state=0;
       count=0;
       gameState=PLAYING;
@@ -494,6 +496,8 @@ count++;
   delay(30);  // 控制帧速率
   if(myDataA.b==true)
   {tft.fillScreen(TFT_BLACK); 
+  game_select=0;
+    df_select=0;
      state=0;
       count=0;
       gameState=PLAYING;
@@ -507,7 +511,8 @@ count++;
     }
     tft.drawString("To be continue...",0,0);
     if(myDataA.b==true)
-    {
+    {game_select=0;
+    df_select=0;
       state=0;
       count=0;
     }
