@@ -409,6 +409,16 @@ if(df_select!=last)//发生变化则刷新箭头位置
 
 if(myDataA.a==true&&a_last==false)//点击确定则切换状态进入游戏
 {
+  if(df_select==0)
+  {int Rnd=random(1);
+if(Rnd==1)
+{
+  ballDX=-2;
+}
+else{ballDX=2;}
+  
+    ballDY=2;
+  }
 if(df_select==1)
 {
   ballDX*=2;
